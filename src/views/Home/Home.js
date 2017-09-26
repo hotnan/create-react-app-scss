@@ -33,7 +33,7 @@ class Home extends React.Component {
           <Box>
             <h1>Hello, Word</h1>
             {(hello) && <p>{hello}</p>}
-            <Button onClick={this.handleSayHello}></Button>
+            <Button color="primary" onClick={this.handleSayHello}>Say Hello</Button>
           </Box>
         </Container>
       </div>

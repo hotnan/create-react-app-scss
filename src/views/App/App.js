@@ -4,11 +4,8 @@ import PropTypes from 'prop-types'
 class App extends React.Component {
 
   static propTypes = {
-    children: PropTypes.object,
-  }
-
-  static defaultProps = {
-    children: null,
+    children: PropTypes.node.isRequired,
+    dispatch: PropTypes.func.isRequired,
   }
 
   render() {
@@ -16,7 +13,9 @@ class App extends React.Component {
     return (
       <div>
         {React.Children.map(children, (child) => {
-          return React.cloneElement(child)
+          if (React.isValidElement(child)) {
+            return React.cloneElement(child)
+          }
         })}
       </div>
     );

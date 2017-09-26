@@ -46,7 +46,7 @@
     "jest": "20.0.4",
     "jest-cli": "^20.0.4",
     "lodash": "^4.16.1",
-    "object-assign": "4.1.1",
+    "object-assign": "^4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.6",
     "promise": "8.0.1",

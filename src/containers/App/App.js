@@ -1,4 +1,5 @@
 import React from 'react'
+import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import App from 'views/App'
@@ -10,11 +11,12 @@ const mapStateToProps = (state) => {
 }
 
 // const mapDispatchToProps = dispatch => {
-//   return {}
+//   return bindActionCreators({
+//   }, dispatch)
 // }
 
 export default withRouter(connect(
   mapStateToProps,
-  null,
   // mapDispatchToProps
+  null,
 )(App))

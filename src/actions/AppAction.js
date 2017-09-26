@@ -1,6 +1,8 @@
 import { createAction } from 'redux-actions'
 
-export const sayHello = createAction('SAY_HELLO')
+export const sayHello = createAction({
+  'SAY_HELLO': count => ({ count: 0 })
+})
 
 // Example of action
 // const { increment, decrement } = createActions({
