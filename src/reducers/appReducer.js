@@ -1,12 +1,16 @@
+import { handleActions } from 'redux-actions'
+import { sayHello } from 'actions/AppAction'
+
 const initialState = {
-  list: [],
+  hello: '',
 }
 
-const appReducer = (state = initialState, action) => {
-  switch (action) {
-    default:
-      return state
-  }
-}
+const appReducer = handleActions({
+  [sayHello](state, action) {
+    return {
+      hello: `Hello there ${state.counter + 1}`
+    }
+  },
+}, initialState);
 
 export default appReducer

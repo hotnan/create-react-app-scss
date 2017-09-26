@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import store from './store'
 // Components
 import App from 'containers/App'
-import Home from 'views/Home'
+import Home from 'containers/Home'
 
 class Root extends Component {
   render() {
