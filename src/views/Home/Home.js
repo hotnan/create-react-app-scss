@@ -1,7 +1,5 @@
 import React from 'react'
-import Sliders from 'components/Sliders'
 import PropTypes from 'prop-types'
-import Cards from 'components/Cards'
 import { Container, Row, Col } from 'reactstrap';
 
 import Box from 'components/Box'
