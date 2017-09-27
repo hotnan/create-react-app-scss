@@ -22,7 +22,7 @@ class Home extends React.Component {
   }
 
   handleSayHello() {
-    this.props.sayHello()
+    this.props.sayHello(2)
   }
 
   render() {
